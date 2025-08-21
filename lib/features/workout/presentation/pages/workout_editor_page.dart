@@ -144,9 +144,11 @@ class WorkoutEditorPage extends StatelessWidget {
                           elevation: 0,
                           minimumSize: const Size(0, 36),
                         ).copyWith(
-                          overlayColor: MaterialStateProperty.resolveWith(
-                            (s) => Colors.black.withOpacity(
-                              s.contains(MaterialState.pressed) ? 0.08 : 0.04,
+                          overlayColor: WidgetStateProperty.resolveWith(
+                            (s) => Colors.black.withValues(
+                              alpha: s.contains(WidgetState.pressed)
+                                  ? 0.08
+                                  : 0.04,
                             ),
                           ),
                         ),
