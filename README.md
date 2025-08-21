@@ -6,7 +6,7 @@ A small, production-ready Flutter app to record workouts made of multiple sets. 
 
 | iOS  | Android |
 | :---------------: | :---------------: |
-| [![](https://github.com/loydkim/pixelfield_assessment/blob/main/demo/demo_iOS.gif)]() | [![](https://github.com/loydkim/pixelfield_assessment/blob/main/demo/demo_android.gif)]() |
+| [![]([https://github.com/loydkim/pixelfield_assessment/blob/main/demo/demo_iOS.gif](https://github.com/loydkim/magic_assessment/blob/main/demo/demo_ios.gif))]() | [![]([https://github.com/loydkim/pixelfield_assessment/blob/main/demo/demo_android.gif](https://github.com/loydkim/magic_assessment/blob/main/demo/demo_android.gif))]() |
 
 ---
 
