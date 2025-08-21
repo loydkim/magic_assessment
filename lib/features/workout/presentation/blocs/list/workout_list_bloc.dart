@@ -13,7 +13,6 @@ class WorkoutListBloc extends Bloc<WorkoutListEvent, WorkoutListState> {
     : _watch = watch,
       _delete = delete,
       super(const WorkoutListState(loading: true)) {
-    // ✅ 한 군데에서 모든 이벤트 처리 (on<_Synced> 필요 없음)
     on<WorkoutListEvent>(_onEvent);
   }
 
@@ -38,7 +37,6 @@ class WorkoutListBloc extends Bloc<WorkoutListEvent, WorkoutListState> {
       deleted: (e) async {
         await _delete(e.id);
       },
-      // ✅ 여기서 synced 처리
       synced: (e) async {
         emit(state.copyWith(loading: false, items: e.items, error: null));
       },
@@ -51,5 +49,3 @@ class WorkoutListBloc extends Bloc<WorkoutListEvent, WorkoutListState> {
     return super.close();
   }
 }
-
-// ⛔️ 여기 있던 _SyncedBase, _StartedSynced, _InternalSynced 전부 삭제하세요.
