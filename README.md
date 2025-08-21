@@ -2,6 +2,12 @@
 
 A small, production-ready Flutter app to record workouts made of multiple sets. It showcases a clean, testable architecture with a reactive local database and modern routing.
 
+## Demo
+
+| iOS  | Android |
+| :---------------: | :---------------: |
+| [![](https://github.com/loydkim/pixelfield_assessment/blob/main/demo/demo_iOS.gif)]() | [![](https://github.com/loydkim/pixelfield_assessment/blob/main/demo/demo_android.gif)]() |
+
 ---
 
 ## Table of Contents
